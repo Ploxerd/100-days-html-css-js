@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="parent" class="container">
+        <div class="info-container">
+            <h1>Contact us</h1>
+            <p>Get in touch with us! Whether you have questions, feedback, or just wanna say hello, we're here for you</p>
+        </div>
+        <div class="form-wrapper">
+            <label>Send us a message</label>
+            <div id="inputs" class="input-container">
+                <input type="text" placeholder="Name" maxlength="30">
+                <input type="email" placeholder="Email" maxlength="40">
+                <input type="number" inputmode="numeric" placeholder="Phone">        
+            </div>
+            <div class="pick-method">
+                <p>Preferred contact method of communication</p>
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" name="contact"> 
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact">
+                        Phone
+                    </label>
+                </div>
+                <div class="text-area">
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
