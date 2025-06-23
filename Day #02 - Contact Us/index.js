@@ -1,18 +1,27 @@
-const SubmitBtn = document.getElementById('submit');
+const submitBtn = document.getElementById('submit');
+const textArea = document.getElementById('message');
 const inputChildren = Array.from(document.getElementById('inputs').children);
-inputChildren.push(document.getElementById('message'));
+let elText = submitBtn.textContent;
 
-SubmitBtn.addEventListener('click', () => {
-  SubmitBtn.disabled = true;
-  SubmitBtn.style.animation = 'none';
-  SubmitBtn.offsetHeight;
-  SubmitBtn.style.animation = 'clicked 0.5s forwards ease-in-out';
-  inputChildren.forEach(child => {
-    child.value = '';
-  })
+submitBtn.addEventListener('click', () => {
+  const isChildrenEmpty = inputChildren.some(child => child.value === ''),
+  isChildEmpty = textArea.value === '';
+  
+  if (isChildrenEmpty || isChildEmpty) {
+    alert('All info must be written');
+  } 
+  else {
+    submitBtn.disabled = true;
+    submitBtn.style.animation = 'none';
+    submitBtn.offsetHeight;
+    submitBtn.style.animation = 'clicked 0.8s forwards ease-in-out';
+    inputChildren.forEach(child => {child.value = '';})
+    textArea.value = '';
+    submitBtn.textContent = "Message Sent!"
+  }
 
-
-  SubmitBtn.addEventListener('animationend', () => {
-    SubmitBtn.disabled = false;
+  submitBtn.addEventListener('animationend', () => {
+    submitBtn.disabled = false;
+    submitBtn.textContent = elText;
   }, { once: true });
 });
