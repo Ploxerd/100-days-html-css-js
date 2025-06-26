@@ -154,3 +154,11 @@ input::-webkit-inner-spin-button {
         color: white;
     }
 }
+
+@media (max-width: 768px) {
+  .container {
+    transform: scale(0.8);
+    transform-origin: top center;
+    gap: 20px;
+  }
+}
