@@ -5,4 +5,4 @@ Recipe - This is a simple coffee recipe page. Through this project, I practiced 
 # Screenshot
 Here is the screenshot for challenge project
 
-![image](https://github.com/user-attachments/assets/25e60d27-ab1b-4c07-ae54-857f434c55eb)
+![image](https://github.com/user-attachments/assets/7e09b41c-7645-4673-8e2d-42d7cb1f5486)
