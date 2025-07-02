@@ -1,0 +1,173 @@
+:root { 
+    --highlighter: rgb(255, 187, 0);
+    --text-sm: 8px;
+    --text-md: 12px;
+    --text-lg: 16px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    height: 8vw;
+    top: 1vw;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2vw;
+    font-weight: bold;
+    z-index: 10;
+    gap: 5px;
+}
+
+.product-title i {
+    font-size: 1.5vw;
+    color: var(--highlighter);
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    background-image: url(https://theicedcoffee.com/wp-content/uploads/2025/04/p3-3-1024x1024.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 55vw;
+    align-items: end;
+}
+
+.img-container h5 {
+    background-color: rgba(0, 0, 0,0.6);
+    height: 5vw;
+    width: 16vw;
+    color: white;
+    margin: 0 0 5%;
+    padding: 0 2% 0;
+    align-content: center;
+    font-size: 1.5vw;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    height: 100vh;
+    padding-left: 1.5rem;
+    gap: 2%;
+}
+
+.product-info {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 1rem;
+}
+
+.time, .level, .budget {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--text-md);
+    gap: 8px;
+}
+
+.time label, .level label, .budget label {
+    color: var(--highlighter);
+    font-weight: 600;
+}
+
+.time div, .level div, .budget div {
+    display: flex;
+    flex-direction: column
+}
+
+.info-container p {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ingredient-list > div {
+    display: flex;
+    gap: 10px;
+}
+
+.ingredient-list label {
+    flex: 1;
+}
+
+.ingredient-list div input {
+    accent-color: var(--highlighter);
+    cursor: pointer;
+}
+
+.product-steps ol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    gap: 15px;
+    font-size: 15px;
+}
+
+@media (max-width: 740px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .product-title {
+        top: 25vh;
+        font-size: 1.5vw;
+    }
+
+    .info-container {
+        justify-content: center;
+        padding-top: 8rem;
+        width: 100vw;
+        height: 100%;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .img-container {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .img-container h5 {
+        font-size: 1.3vw;
+    }
+}
+
