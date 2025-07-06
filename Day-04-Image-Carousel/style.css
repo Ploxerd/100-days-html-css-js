@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+
+}
+
+.image-display {
+    display: flex;
+    align-items: center;
+}
+
+.image-display button {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 3.5vw;
+}
+
+.image-display i {
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.image-display img {
+    width: 80vw;
+    min-width: 40vw;
+    height: 25rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.image-slides {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 95vw;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+.image-slides img {
+    width: clamp(5rem, 20vw, 15rem);
+    height: clamp(5rem, 20vw, 15rem);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: border 0.2s ease-in-out;
+}
+
+
+
