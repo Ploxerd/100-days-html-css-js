@@ -10,3 +10,4 @@ Here's the list for the projects I've done so far
   2. Contact Us
   3. Recipe
   4. Image Carousel
+  5. Password Generator
