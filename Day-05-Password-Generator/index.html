@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Generate password</h2>
+
+        <div class="display-container">
+            <Label class="generated-title">GENERATED PASSWORD</Label>
+            <div class="display-wrapper">
+                <label id="password">Your Password</label>
+                <span>
+                    <button title="copy password" id="copy-button">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <button title="refresh password" id="refresh-button">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="character-container">
+            <div class="text-div">
+                <label class="length-title">CHARACTER LENGTH</label>
+                <label id="current-length"></label>
+            </div>
+            <div class="input-div">
+                <label>1</label>
+                <input id="password-length" type="range" value="16" min="1" max="32">
+                <label>32</label>
+            </div>
+        </div>
+
+        <div class="condition-container">
+            <label class="settings-title">SETTINGS</label>
+            <div>
+                <h5>Include uppercase letters</h5>
+                <label>
+                    <input type="checkbox" id="uppercase"></input>
+                    <span></span>
+                </label>
+            </div>
+
+            <div>
+                <h5>Include lowercase letters</h5>
+                <label>
+                    <input type="checkbox" id="lowercase"></input>
+                    <span></span>
+                </label>
+            </div>
+
+            <div>
+                <h5>Include numbers</h5>
+                <label>
+                    <input type="checkbox" id="numbers"></input>
+                    <span></span>
+                </label>
+            </div>
+
+            <div>
+                <h5>Include symbols</h5>
+                <label> 
+                    <input type="checkbox" id="symbols"></input>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+        <button id="generate">Generate Password</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
