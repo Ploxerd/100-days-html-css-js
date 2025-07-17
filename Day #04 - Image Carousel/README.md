@@ -3,6 +3,6 @@
 Image Carousel - Image slider where you slide between different images, kind of a comic/story based sliding
 
 # Screenshot
-Here is the screenshot for challenge project
+Here is the screenshot for this challenge
 
-![image](https://github.com/user-attachments/assets/7307b991-d366-41dd-a5a2-a402e06eaa80)
+![Project](image.png)

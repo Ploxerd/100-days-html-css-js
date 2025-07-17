@@ -1,6 +1,8 @@
-# 100-days-html-css-js
+# 100-days-of-javascript
 
-A collection of 100 daily projects focused on HTML, CSS, and JavaScript to improve web development skills.
+A collection of 100 daily projects focused on JavaScript to improve web development skill and knowledge.
+
+Note: These projects aren't literal day by day progress, as I would be pausing from time to time.
 
 # Projects
 
@@ -11,3 +13,4 @@ Here's the list for the projects I've done so far
   3. Recipe
   4. Image Carousel
   5. Password Generator
+  6. Minesweepr Game
