@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div oncontextmenu="return false" class="wrapper">
+        <div class="display">
+            <span class="flag-counter">
+                <label id="mine-counter">000</label>
+            </span>
+            <button class="life-state" id="reset">
+                <img src="https://64.media.tumblr.com/425cba0381257f0d70b1c4b93e2b2f78/efedbd680cf822be-7c/s540x810/11c61ff333758654fb60466b870ac94bc7012ced.png" alt="smile">
+            </button>
+            <span class="game-timer">
+                <label id="timer">000</label>
+            </span>
+        </div>
+
+        <div id="the-board" class="game-board"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
